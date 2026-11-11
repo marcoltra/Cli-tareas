@@ -1,0 +1,19 @@
+[project]
+name = "tareas"
+version = "0.1.0"
+description = "Automatiza tareas repetitivas con ficheros desde la terminal"
+readme = "README.md"
+authors = [
+    { name = "Marc Oltra", email = "navarrooltramarc@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "typer>=0.29.1",
+]
+
+[project.scripts]
+tareas = "tareas.cli:app"
+
+[build-system]
+requires = ["uv_build>=0.11.1,<0.12.0"]
+build-backend = "uv_build"
